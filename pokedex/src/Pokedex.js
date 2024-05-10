@@ -6,7 +6,7 @@ export function Pokedex() {
   const [selectedPokemon, setSelectedPokemon] = useState(undefined);
 
   async function getPokemonInfo(name) {
-    const URL = `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`;
+    const URL = "https://pokeapi.co/api/v2/pokemon/"+name.toLowerCase()
 
     const response = await fetch(URL);
     const data = await response.json();
@@ -26,7 +26,9 @@ export function Pokedex() {
             selectedPokemon.types.map(type => (
               <PokemonType type={type.type.name} />
             ))
-          }          
+          }    
+
+          <img src={selectedPokemon.sprites.front_default}></img>      
         </div>
       )}
 
