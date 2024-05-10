@@ -11,6 +11,8 @@ export function Pokedex() {
     const response = await fetch(URL);
     const data = await response.json();
 
+    console.log(data)
+
     setSelectedPokemon(data);
   }
 
@@ -19,8 +21,12 @@ export function Pokedex() {
       {selectedPokemon && (
         <div>
           {selectedPokemon.species.name}
-
-          <PokemonType type={selectedPokemon.types[0].type.name} />
+            <br/>
+          {
+            selectedPokemon.types.map(type => (
+              <PokemonType type={type.type.name} />
+            ))
+          }          
         </div>
       )}
 
