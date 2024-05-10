@@ -1,46 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
 
-export function Pokedex() {
-  const pokemonToShow = ["Bulbasaur", "Squirtle", "Charmander", "Pikachu", "Butterfree", "Articuno", "Sigilyph"]
-  const [selectedPokemon, setSelectedPokemon] = useState(undefined);
+export function Pokedex(props) {
+  const [selectedPokemon, setSelectedPokemon] = useState(null);
 
-  async function getPokemonInfo(name) {
-    const URL = "https://pokeapi.co/api/v2/pokemon/"+name.toLowerCase()
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        console.log(props.name)
 
-    const response = await fetch(URL);
-    const data = await response.json();
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`);
+        const data = await response.json();
+        setSelectedPokemon(data);
+      } catch (error) {
+        console.error("Error fetching Pokemon data:", error);
+      }
+    }
 
-    console.log(data)
-
-    setSelectedPokemon(data);
-  }
+    fetchData();
+  }, [props.name]);
 
   return (
     <div>
       {selectedPokemon && (
         <div>
           {selectedPokemon.species.name}
-            <br/>
-          {
-            selectedPokemon.types.map(type => (
-              <PokemonType type={type.type.name} />
-            ))
-          }    
-
-          <img src={selectedPokemon.sprites.front_default}></img>      
+          <br />
+          {selectedPokemon.types.map((type) => (
+            <PokemonType key={type.type.name} type={type.type.name} />
+          ))}
+          <img src={selectedPokemon.sprites.front_default} alt={selectedPokemon.species.name} />
         </div>
       )}
-
-      <p>Select Pokemon:</p>
-
-      {
-        pokemonToShow.map(p => (
-          <button onClick={() => getPokemonInfo(p)}>{p}</button>
-        ))
-      }
-
-      
     </div>
   );
 }
