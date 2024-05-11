@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagicWandSparkles, faRotate, faMars, faVenus, faV } from '@fortawesome/free-solid-svg-icons';
 
 export function Pokedex(props) {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -66,27 +68,46 @@ export function Pokedex(props) {
     <div>
       {selectedPokemon && (
         <div>
+          <div className="shiny-icon">
+            <a href="#" className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>
+              <FontAwesomeIcon icon={faMagicWandSparkles} transform="grow-7" />
+            </a>
+          </div>
+
+          <div className="rotate-icon">
+            <a href="#" className="rotation" onClick={() => rotate()}>
+              <FontAwesomeIcon icon={faRotate} transform="grow-7" />
+            </a>
+          </div>
           {selectedPokemon.species.name}
+          
           <br />
           {selectedPokemon.types.map((type) => (
             <PokemonType key={type.type.name} type={type.type.name} />
           ))}
+          
           <img className="pokemonImage" src={shownSprite} alt={selectedPokemon.species.name} />
-          <hr/>
-          <button className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>✨toggle Shiny</button>
-          <br/>
 
-          <button onClick={() => rotate()}>rotate</button>
           {(selectedPokemon.sprites.front_female && 
-          <div>
-            <button onClick={() => getSprite(facingDirection, "default")}>♂</button>
-            <button onClick={() => getSprite(facingDirection, "female")}>♀</button>
-          </div>
+              <div>
+                {(chosenGender == "default" &&
+                  <div className="gender-icon">
+                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "female")}>
+                      <FontAwesomeIcon icon={faMars} transform="grow-7" />
+                    </a>
+                  </div>       
+                )}
+                {(chosenGender == "female" &&
+                  <div className="gender-icon">
+                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "default")}>
+                      <FontAwesomeIcon icon={faVenus} transform="grow-7" />
+                    </a>
+                  </div> 
+                )}
+              </div>
             )}
         </div>
       )}
-      
-      
     </div>
   );
 }
