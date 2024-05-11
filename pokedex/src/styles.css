@@ -39,6 +39,12 @@ input {
   margin: 2px;
 }
 
+.pokemonImage {
+  height: 100px;
+  object-fit:scale-down;
+  object-position: bottom;
+}
+
 h4 {
   text-transform: capitalize;
   display: inline-block;

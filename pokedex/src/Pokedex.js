@@ -14,7 +14,7 @@ export function Pokedex(props) {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`);
         const data = await response.json();
         setSelectedPokemon(data);
-        setShownSprite(data.sprites.front_default);
+        setShownSprite(data.sprites.other.showdown.front_default);
       } catch (error) {
         console.error("Error fetching Pokemon data:", error);
       }
@@ -30,13 +30,13 @@ export function Pokedex(props) {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`);
     const data = await response.json();
     if(gender === "default" && shinyToggle === false) {
-      setShownSprite(data.sprites[direction+"_default"])
+      setShownSprite(data.sprites.other.showdown[direction+"_default"])
     } else if(gender === "default" && shinyToggle === true) {
-      setShownSprite(data.sprites[direction+"_shiny"])
+      setShownSprite(data.sprites.other.showdown[direction+"_shiny"])
     } else if(gender === "female" && shinyToggle === false) {
-      setShownSprite(data.sprites[direction+"_female"])
+      setShownSprite(data.sprites.other.showdown[direction+"_female"])
     } else if(gender === "female" && shinyToggle === true) {
-      setShownSprite(data.sprites[direction+"_shiny_female"])
+      setShownSprite(data.sprites.other.showdown[direction+"_shiny_female"])
     }
   }
 
@@ -67,7 +67,7 @@ export function Pokedex(props) {
           {selectedPokemon.types.map((type) => (
             <PokemonType key={type.type.name} type={type.type.name} />
           ))}
-          <img src={shownSprite} alt={selectedPokemon.species.name} />
+          <img className="pokemonImage" src={shownSprite} alt={selectedPokemon.species.name} />
           <hr/>
           <button className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>✨toggle Shiny</button>
           <br/>
