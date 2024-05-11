@@ -31,12 +31,11 @@ export default function App() {
       <header className="App-header">
           <h2>Aya's Pokédex</h2>
           {(currentOffset > 0 && 
-            <a href="#" className="icon" onClick={() => getInfo(currentOffset-1)}>
+            <a href="#" className="icon iconLeft" onClick={() => getInfo(currentOffset-1)}>
               <FontAwesomeIcon icon={faArrowLeft} className="icon-right" />
             </a>
             
             )}
-|
           <a href="#" className="icon" onClick={() => getInfo(currentOffset+1)}>
             <FontAwesomeIcon icon={faArrowRight} className="icon-right" />
           </a>

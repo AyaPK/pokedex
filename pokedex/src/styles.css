@@ -189,3 +189,7 @@ img {
 .icon:hover {
   color: #333; /* Darkens on hover */
 }
+
+.iconLeft {
+  margin-right: 10px;
+}
