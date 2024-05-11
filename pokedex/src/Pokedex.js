@@ -70,13 +70,13 @@ export function Pokedex(props) {
         <div>
           <div className="shiny-icon">
             <a href="#" className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>
-              <FontAwesomeIcon icon={faMagicWandSparkles} />
+              <FontAwesomeIcon icon={faMagicWandSparkles} transform="grow-7" />
             </a>
           </div>
 
           <div className="rotate-icon">
             <a href="#" className="rotation" onClick={() => rotate()}>
-              <FontAwesomeIcon icon={faRotate} />
+              <FontAwesomeIcon icon={faRotate} transform="grow-7" />
             </a>
           </div>
           {selectedPokemon.species.name}
