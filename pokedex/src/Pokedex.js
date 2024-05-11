@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagicWandSparkles } from '@fortawesome/free-solid-svg-icons';
+import { faMagicWandSparkles, faRotate } from '@fortawesome/free-solid-svg-icons';
 
 export function Pokedex(props) {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -70,7 +70,13 @@ export function Pokedex(props) {
         <div>
           <div className="shiny-icon">
             <a href="#" className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>
-              <FontAwesomeIcon icon={faMagicWandSparkles} className="icon-right" />
+              <FontAwesomeIcon icon={faMagicWandSparkles} />
+            </a>
+          </div>
+
+          <div className="rotate-icon">
+            <a href="#" className="rotation" onClick={() => rotate()}>
+              <FontAwesomeIcon icon={faRotate} />
             </a>
           </div>
           {selectedPokemon.species.name}
@@ -85,7 +91,6 @@ export function Pokedex(props) {
 
           <br/>
 
-          <button onClick={() => rotate()}>rotate</button>
           {(selectedPokemon.sprites.front_female && 
           <div>
             <button onClick={() => getSprite(facingDirection, "default")}>♂</button>
