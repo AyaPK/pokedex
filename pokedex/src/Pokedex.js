@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagicWandSparkles, faRotate } from '@fortawesome/free-solid-svg-icons';
+import { faMagicWandSparkles, faRotate, faMars, faVenus, faV } from '@fortawesome/free-solid-svg-icons';
 
 export function Pokedex(props) {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -87,15 +87,24 @@ export function Pokedex(props) {
           ))}
           
           <img className="pokemonImage" src={shownSprite} alt={selectedPokemon.species.name} />
-          <hr/>
-
-          <br/>
 
           {(selectedPokemon.sprites.front_female && 
-          <div>
-            <button onClick={() => getSprite(facingDirection, "default")}>♂</button>
-            <button onClick={() => getSprite(facingDirection, "female")}>♀</button>
-          </div>
+              <div>
+                {(chosenGender == "default" &&
+                  <div className="gender-icon">
+                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "female")}>
+                      <FontAwesomeIcon icon={faMars} transform="grow-7" />
+                    </a>
+                  </div>       
+                )}
+                {(chosenGender == "female" &&
+                  <div className="gender-icon">
+                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "default")}>
+                      <FontAwesomeIcon icon={faVenus} transform="grow-7" />
+                    </a>
+                  </div> 
+                )}
+              </div>
             )}
         </div>
       )}
