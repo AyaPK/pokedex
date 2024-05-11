@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Pokedex } from "./Pokedex";
 import "./styles.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function App() {
   const [shownPokemon, setShownPokemon] = useState(undefined);
@@ -29,9 +31,15 @@ export default function App() {
       <header className="App-header">
           <h2>Aya's Pokédex</h2>
           {(currentOffset > 0 && 
-          <button onClick={() => getInfo(currentOffset-1)}>&lt;=</button>
+            <a href="#" className="icon" onClick={() => getInfo(currentOffset-1)}>
+              <FontAwesomeIcon icon={faArrowLeft} className="icon-right" />
+            </a>
+            
             )}
-          <button onClick={() => getInfo(currentOffset+1)}>=&gt;</button>
+|
+          <a href="#" className="icon" onClick={() => getInfo(currentOffset+1)}>
+            <FontAwesomeIcon icon={faArrowRight} className="icon-right" />
+          </a>
       </header>
 
       <body>

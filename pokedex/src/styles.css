@@ -162,3 +162,13 @@ img {
 .shiny-disabled {
   background-color: red;
 }
+
+.icon {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #999; /* Greyed out color */
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #333; /* Darkens on hover */
+}
