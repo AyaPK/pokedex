@@ -5,7 +5,6 @@ body {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-
 }
 
 input {
@@ -33,11 +32,11 @@ input {
   max-width: 220px;
   background-color: #fff;
   width: 330px;
-  position: relative;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 5px 13px 10px -7px rgba(0, 0, 0, 0.1);
-  margin: auto;
+  height: 250px;
+  margin: 2px;
 }
 
 h4 {
@@ -148,4 +147,12 @@ img {
 .dragon {
   background-color: #7038f8;
   border: 1px solid #4924a1;
+}
+
+.shiny-enabled {
+  background-color: green;
+}
+
+.shiny-disabled {
+  background-color: red;
 }
