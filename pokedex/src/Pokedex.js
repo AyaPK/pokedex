@@ -11,6 +11,10 @@ export function Pokedex(props) {
   useEffect(() => {
     async function fetchData() {
       try {
+        setShinyToggle(false);
+        setChosenGender("default");
+        setFacingDirection("front");
+
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`);
         const data = await response.json();
         setSelectedPokemon(data);
