@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagicWandSparkles, faRotate, faMars, faVenus, faV } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagicWandSparkles, faRotate, faMars, faVenus, faV } from "@fortawesome/free-solid-svg-icons";
 
 export function Pokedex(props) {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -98,11 +98,11 @@ export function Pokedex(props) {
           <br />
           {(types && 
           <div>
-                {types.map((type) => (
-                  <PokemonType key={type.type.name} type={type.type.name} />
-                ))}
-                </div>
-            )}
+            {types.map((type) => (
+              <PokemonType key={type.type.name} type={type.type.name} />
+            ))}
+          </div>
+          )}
 
           
           <img className="pokemonImage" src={shownSprite} alt={selectedPokemon.name} />
@@ -124,7 +124,7 @@ export function Pokedex(props) {
                   </div> 
                 )}
               </div>
-            )}
+          )}
         </div>
       )}
     </div>
