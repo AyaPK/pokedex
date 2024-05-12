@@ -106,15 +106,15 @@ export function Pokedex(props) {
               <div>
                 {(chosenGender === "default" &&
                   <div className="gender-icon">
-                    <button href="#" className="rotation" onClick={() => getSprite(facingDirection, "female", setVariety)}>
-                      <FontAwesomeIcon icon={faMars} transform="grow-7" />
+                    <button className="gender" href="#" onClick={() => getSprite(facingDirection, "female", setVariety)}>
+                      <FontAwesomeIcon className="gendered-icon" icon={faMars} transform="grow-7" />
                     </button>
                   </div>       
                 )}
                 {(chosenGender === "female" &&
                   <div className="gender-icon">
-                    <button href="#" className="rotation" onClick={() => getSprite(facingDirection, "default", setVariety)}>
-                      <FontAwesomeIcon icon={faVenus} transform="grow-7" />
+                    <button className="gender" href="#" onClick={() => getSprite(facingDirection, "default", setVariety)}>
+                      <FontAwesomeIcon className="gendered-icon" icon={faVenus} transform="grow-7" />
                     </button>
                   </div> 
                 )}
