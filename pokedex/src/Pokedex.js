@@ -85,7 +85,7 @@ export function Pokedex(props) {
 
           <div className="rotate-icon">
             <button href="#" className="rotation" onClick={() => rotate()}>
-              <FontAwesomeIcon icon={faRotate} transform="grow-7" />
+              <FontAwesomeIcon className="rotation-icon" icon={faRotate} transform="grow-7" />
             </button>
           </div>
           {selectedPokemon.name}
