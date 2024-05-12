@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Pokedex } from "./Pokedex";
 import "./styles.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { SearchBar } from "./SearchBar";
 
 export default function App() {
@@ -36,10 +36,10 @@ export default function App() {
       setSearching(true);
       chosenNames = chosenNames.map(name => {
         let lowerCaseName = name.toLowerCase();
-        let modifiedName = lowerCaseName.replace(/\s+/g, '-');
+        let modifiedName = lowerCaseName.replace(/\s+/g, "-");
         
         return modifiedName;
-    });
+      });
       setShownPokemon(chosenNames.slice(0,20))
 
     } else {
@@ -51,38 +51,38 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <h2>Aya's Pokédex</h2>
-          {(!searching && 
+        <h2>Aya&apos;s Pokédex</h2>
+        {(!searching && 
             <div>
 
-            {(currentOffset > 0 && 
-                <a href="#" className="icon iconLeft" onClick={() => getInfo(currentOffset-1)}>
-                  <FontAwesomeIcon icon={faArrowLeft} className="icon-right" transform="grow-20" />
-                </a>
+              {(currentOffset > 0 && 
+                <button href="#" className="hidden-button iconLeft" onClick={() => getInfo(currentOffset-1)}>
+                  <FontAwesomeIcon icon={faArrowLeft} className="button-icon" transform="grow-30" />
+                </button>
                 
-                )}
-              <a href="#" className="icon" onClick={() => getInfo(currentOffset+1)}>
-                <FontAwesomeIcon icon={faArrowRight} className="icon-right" transform="grow-20" />
-              </a>
+              )}
+              <button href="#" className="hidden-button" onClick={() => getInfo(currentOffset+1)}>
+                <FontAwesomeIcon icon={faArrowRight} className="button-icon" transform="grow-30" />
+              </button>
 
             </div>
-            )}
+        )}
 
       </header>
 
       <body>
 
-      <SearchBar updateSelectedPokemon={updateSelectedPokemon} />
+        <SearchBar updateSelectedPokemon={updateSelectedPokemon} />
 
         <div className="card-area">
-      {(shownPokemon &&
+          {(shownPokemon &&
             shownPokemon.map(p => (
-              <div className="Card">
+              <div key={p.id} className="Card">
                 <Pokedex name={p.toLowerCase()} />
               </div>
             ))
           )}
-          </div>
+        </div>
       </body>
     </div>
   );

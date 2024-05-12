@@ -1,0 +1,16 @@
+name: Pull Request Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: cd pokedex && npm install
+    - name: Run ESLint
+      run: cd pokedex && npx eslint . --ext .js,.jsx,.ts,.tsx
