@@ -69,7 +69,7 @@ export function Pokedex(props) {
     }
   }
   useEffect(() => {
-    getSprite(facingDirection, chosenGender, setVariety)
+    getSprite(facingDirection, chosenGender, setVariety, shinyToggle)
   }, [facingDirection]);
 
 
@@ -78,14 +78,14 @@ export function Pokedex(props) {
       {selectedPokemon && (
         <div>
           <div className="shiny-icon">
-            <button href="#" className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>
+            <button href="#" className="hidden-button" onClick={() => toggleShiny()}>
               <FontAwesomeIcon className={shinyToggle ? "shiny-enabled-icon" : "shiny-disabled-icon"} icon={faMagicWandSparkles} transform="grow-7" />
             </button>
           </div>
 
           <div className="rotate-icon">
-            <button href="#" className="rotation" onClick={() => rotate()}>
-              <FontAwesomeIcon className="rotation-icon" icon={faRotate} transform="grow-7" />
+            <button href="#" className="hidden-button" onClick={() => rotate()}>
+              <FontAwesomeIcon className="button-icon" icon={faRotate} transform="grow-7" />
             </button>
           </div>
           {selectedPokemon.name}
@@ -106,15 +106,15 @@ export function Pokedex(props) {
               <div>
                 {(chosenGender === "default" &&
                   <div className="gender-icon">
-                    <button className="gender" href="#" onClick={() => getSprite(facingDirection, "female", setVariety)}>
-                      <FontAwesomeIcon className="gendered-icon" icon={faMars} transform="grow-7" />
+                    <button className="hidden-button" href="#" onClick={() => getSprite(facingDirection, "female", setVariety, shinyToggle)}>
+                      <FontAwesomeIcon className="button-icon" icon={faMars} transform="grow-7" />
                     </button>
                   </div>       
                 )}
                 {(chosenGender === "female" &&
                   <div className="gender-icon">
-                    <button className="gender" href="#" onClick={() => getSprite(facingDirection, "default", setVariety)}>
-                      <FontAwesomeIcon className="gendered-icon" icon={faVenus} transform="grow-7" />
+                    <button className="hidden-button" href="#" onClick={() => getSprite(facingDirection, "default", setVariety, shinyToggle)}>
+                      <FontAwesomeIcon className="button-icon" icon={faVenus} transform="grow-7" />
                     </button>
                   </div> 
                 )}

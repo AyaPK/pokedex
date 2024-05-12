@@ -56,13 +56,13 @@ export default function App() {
             <div>
 
               {(currentOffset > 0 && 
-                <button href="#" className="icon iconLeft" onClick={() => getInfo(currentOffset-1)}>
-                  <FontAwesomeIcon icon={faArrowLeft} className="icon-right" transform="grow-20" />
+                <button href="#" className="hidden-button iconLeft" onClick={() => getInfo(currentOffset-1)}>
+                  <FontAwesomeIcon icon={faArrowLeft} className="button-icon" transform="grow-30" />
                 </button>
                 
               )}
-              <button href="#" className="icon" onClick={() => getInfo(currentOffset+1)}>
-                <FontAwesomeIcon icon={faArrowRight} className="icon-right" transform="grow-20" />
+              <button href="#" className="hidden-button" onClick={() => getInfo(currentOffset+1)}>
+                <FontAwesomeIcon icon={faArrowRight} className="button-icon" transform="grow-30" />
               </button>
 
             </div>
