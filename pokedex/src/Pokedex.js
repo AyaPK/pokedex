@@ -90,14 +90,14 @@ export function Pokedex(props) {
 
           {(selectedPokemon.sprites.front_female && 
               <div>
-                {(chosenGender == "default" &&
+                {(chosenGender === "default" &&
                   <div className="gender-icon">
                     <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "female")}>
                       <FontAwesomeIcon icon={faMars} transform="grow-7" />
                     </a>
                   </div>       
                 )}
-                {(chosenGender == "female" &&
+                {(chosenGender === "female" &&
                   <div className="gender-icon">
                     <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "default")}>
                       <FontAwesomeIcon icon={faVenus} transform="grow-7" />

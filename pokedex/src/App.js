@@ -3,6 +3,7 @@ import { Pokedex } from "./Pokedex";
 import "./styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { SearchBar } from "./SearchBar";
 
 export default function App() {
   const [shownPokemon, setShownPokemon] = useState(undefined);
@@ -43,6 +44,9 @@ export default function App() {
 
       <body>
 
+      <SearchBar />
+
+        <div className="card-area">
       {(shownPokemon &&
             shownPokemon.results.map(p => (
               <div className="Card">
@@ -50,6 +54,7 @@ export default function App() {
               </div>
             ))
           )}
+          </div>
       </body>
     </div>
   );
