@@ -37,19 +37,19 @@ export function Pokedex(props) {
     fetchData();
   }, [props.name]);
 
-  async function getSprite(direction, gender, variety) {
+  async function getSprite(direction, gender, variety, shiny=false) {
     setFacingDirection(direction);
     setChosenGender(gender);
 
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${variety}`);
     const data = await response.json();
-    if(gender === "default" && shinyToggle === false) {
+    if(gender === "default" && shiny === false) {
       setShownSprite(data.sprites[direction+"_default"])
-    } else if(gender === "default" && shinyToggle === true) {
+    } else if(gender === "default" && shiny === true) {
       setShownSprite(data.sprites[direction+"_shiny"])
-    } else if(gender === "female" && shinyToggle === false) {
+    } else if(gender === "female" && shiny === false) {
       setShownSprite(data.sprites[direction+"_female"])
-    } else if(gender === "female" && shinyToggle === true) {
+    } else if(gender === "female" && shiny === true) {
       setShownSprite(data.sprites[direction+"_shiny_female"])
     }
   }
@@ -58,7 +58,7 @@ export function Pokedex(props) {
     setShinyToggle(prevShinyToggle => !prevShinyToggle);
   }
   useEffect(() => {
-    getSprite(facingDirection, chosenGender, setVariety)
+    getSprite(facingDirection, chosenGender, setVariety, shinyToggle)
   }, [shinyToggle]);
 
   function rotate() {
