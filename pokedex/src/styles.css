@@ -185,32 +185,53 @@ img {
 }
 
 .shiny-disabled {
-  color: #999;
-  cursor: default;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
-.shiny-disabled:hover {
+.shiny-disabled-icon {
+  cursor: default;
+  font-size:18px;
+  color: #999;
+}
+
+.shiny-disabled-icon:hover {
   color: #5f5f5f;
   cursor: default;
 }
 
 .shiny-enabled {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.shiny-enabled-icon {
+  cursor: default;
+  font-size:18px;
   color: #ffcc00;
-  cursor: default;
 }
 
-.shiny-enabled:hover {
-  color: #cca300;
+.shiny-enabled-icon:hover {
+  color: #c9a100;
   cursor: default;
 }
-
 .icon {
-  font-size: 24px; /* Adjust the size as needed */
-  color: #999; /* Greyed out color */
-  text-decoration: none;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
-.icon:hover {
+.icon .icon-right {
+  font-size: 24px; /* Set icon size */
+  color: #999; /* Icon color */
+}
+
+.icon-right:hover {
   color: #333; /* Darkens on hover */
 }
 

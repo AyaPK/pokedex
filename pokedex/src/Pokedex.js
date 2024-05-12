@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagicWandSparkles, faRotate, faMars, faVenus, faV } from "@fortawesome/free-solid-svg-icons";
+import { faMagicWandSparkles, faRotate, faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
 
 export function Pokedex(props) {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -72,26 +72,21 @@ export function Pokedex(props) {
     getSprite(facingDirection, chosenGender, setVariety)
   }, [facingDirection]);
 
-  async function getTypes() {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${data.varieties[0].pokemon.name}`);
-    const data = await response.json();
-    setTypes(data.types);
-  }
 
   return (
     <div>
       {selectedPokemon && (
         <div>
           <div className="shiny-icon">
-            <a href="#" className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>
-              <FontAwesomeIcon icon={faMagicWandSparkles} transform="grow-7" />
-            </a>
+            <button href="#" className={shinyToggle ? "shiny-enabled" : "shiny-disabled"} onClick={() => toggleShiny()}>
+              <FontAwesomeIcon className={shinyToggle ? "shiny-enabled-icon" : "shiny-disabled-icon"} icon={faMagicWandSparkles} transform="grow-7" />
+            </button>
           </div>
 
           <div className="rotate-icon">
-            <a href="#" className="rotation" onClick={() => rotate()}>
+            <button href="#" className="rotation" onClick={() => rotate()}>
               <FontAwesomeIcon icon={faRotate} transform="grow-7" />
-            </a>
+            </button>
           </div>
           {selectedPokemon.name}
           
@@ -111,16 +106,16 @@ export function Pokedex(props) {
               <div>
                 {(chosenGender === "default" &&
                   <div className="gender-icon">
-                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "female", setVariety)}>
+                    <button href="#" className="rotation" onClick={() => getSprite(facingDirection, "female", setVariety)}>
                       <FontAwesomeIcon icon={faMars} transform="grow-7" />
-                    </a>
+                    </button>
                   </div>       
                 )}
                 {(chosenGender === "female" &&
                   <div className="gender-icon">
-                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "default", setVariety)}>
+                    <button href="#" className="rotation" onClick={() => getSprite(facingDirection, "default", setVariety)}>
                       <FontAwesomeIcon icon={faVenus} transform="grow-7" />
-                    </a>
+                    </button>
                   </div> 
                 )}
               </div>

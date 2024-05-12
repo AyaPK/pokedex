@@ -51,19 +51,19 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Aya's Pokédex</h2>
+        <h2>Aya&apos;s Pokédex</h2>
         {(!searching && 
             <div>
 
               {(currentOffset > 0 && 
-                <a href="#" className="icon iconLeft" onClick={() => getInfo(currentOffset-1)}>
+                <button href="#" className="icon iconLeft" onClick={() => getInfo(currentOffset-1)}>
                   <FontAwesomeIcon icon={faArrowLeft} className="icon-right" transform="grow-20" />
-                </a>
+                </button>
                 
               )}
-              <a href="#" className="icon" onClick={() => getInfo(currentOffset+1)}>
+              <button href="#" className="icon" onClick={() => getInfo(currentOffset+1)}>
                 <FontAwesomeIcon icon={faArrowRight} className="icon-right" transform="grow-20" />
-              </a>
+              </button>
 
             </div>
         )}
@@ -77,7 +77,7 @@ export default function App() {
         <div className="card-area">
           {(shownPokemon &&
             shownPokemon.map(p => (
-              <div className="Card">
+              <div key={p.id} className="Card">
                 <Pokedex name={p.toLowerCase()} />
               </div>
             ))

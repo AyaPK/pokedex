@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { allPokemon } from "./AllPokemon";
 
 export function SearchBar(props) {
-  const [searchName, setSearchName] = useState([])
-
   function searchForResults(string) {
     if(string){
       const filteredPokemon = allPokemon.filter(name => name.toLowerCase().includes(string));
