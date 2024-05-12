@@ -20,6 +20,11 @@ input {
   text-align: center;
 }
 
+.top-bar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
 .Card {
   position: relative;
   padding: 30px;
@@ -164,7 +169,15 @@ img {
 .rotate-icon {
   position: absolute;
   top: 110px;
-  right: 10px;
+}
+
+.moon-icon {
+    margin-left: 20px;
+}
+
+.top-bar h2 {
+  margin: 0; /* Remove default margin */
+  flex: 1; /* Allow header to take up remaining space */
 }
 
 .rotation {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Pokedex } from "./Pokedex";
 import "./styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowLeft, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 export default function App() {
   const [shownPokemon, setShownPokemon] = useState(undefined);
@@ -26,10 +26,22 @@ export default function App() {
     getInfo(currentOffset);
   }, []);
 
+  function toggleDarkMode() {
+
+  }
+
   return (
     <div className="App">
       <header className="App-header">
+        <div className="top-bar">
+            <div className="moon-icon">
+            <a href="#" className="" onClick={() => toggleDarkMode()}>
+              <FontAwesomeIcon icon={faMoon} transform="grow-20" />
+            </a>
+          </div>
           <h2>Aya's Pokédex</h2>
+        </div>
+
           {(currentOffset > 0 && 
             <a href="#" className="icon iconLeft" onClick={() => getInfo(currentOffset-1)}>
               <FontAwesomeIcon icon={faArrowLeft} className="icon-right" transform="grow-20" />
