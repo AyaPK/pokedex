@@ -88,7 +88,9 @@ export function Pokedex(props) {
               <FontAwesomeIcon className="button-icon" icon={faRotate} transform="grow-7" />
             </button>
           </div>
-          {selectedPokemon.name}
+          <div className="pokemon-name">
+            {selectedPokemon.name}
+          </div>
           
           <br />
           {(types && 
