@@ -243,10 +243,13 @@ img {
 }
 
 .search-bar:focus {
-  border-color: #66afe9; /* Highlight color on focus */
+  border-color: #66afe9;
 }
 
-/* Placeholder style */
 .search-bar::placeholder {
   color: #999;
+}
+
+.pokemon-name::first-letter {
+  text-transform: capitalize;
 }
