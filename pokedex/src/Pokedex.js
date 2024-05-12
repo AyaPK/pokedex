@@ -9,6 +9,8 @@ export function Pokedex(props) {
   const [shinyToggle, setShinyToggle] = useState(false);
   const [chosenGender, setChosenGender] = useState("default");
   const [facingDirection, setFacingDirection] = useState("front");
+  const [setVariety, setSetVariety] = useState(null);
+  const [types, setTypes] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -17,12 +19,16 @@ export function Pokedex(props) {
         setChosenGender("default");
         setFacingDirection("front");
 
-        console.log(props.name)
-
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`);
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${props.name}`);
         const data = await response.json();
-        setSelectedPokemon(data);
-        setShownSprite(data.sprites.other.showdown.front_default);
+
+        const types = await fetch(`https://pokeapi.co/api/v2/pokemon/${data.varieties[0].pokemon.name}`);
+        const typesResponse = await types.json();
+
+        setTypes(typesResponse.types);
+        setSelectedPokemon(data)
+        setSetVariety(data.varieties[0].pokemon.name)
+        getSprite("front", "default", data.varieties[0].pokemon.name)
       } catch (error) {
         console.error("Error fetching Pokemon data:", error);
       }
@@ -31,20 +37,20 @@ export function Pokedex(props) {
     fetchData();
   }, [props.name]);
 
-  async function getSprite(direction, gender) {
+  async function getSprite(direction, gender, variety) {
     setFacingDirection(direction);
     setChosenGender(gender);
 
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${variety}`);
     const data = await response.json();
     if(gender === "default" && shinyToggle === false) {
-      setShownSprite(data.sprites.other.showdown[direction+"_default"])
+      setShownSprite(data.sprites[direction+"_default"])
     } else if(gender === "default" && shinyToggle === true) {
-      setShownSprite(data.sprites.other.showdown[direction+"_shiny"])
+      setShownSprite(data.sprites[direction+"_shiny"])
     } else if(gender === "female" && shinyToggle === false) {
-      setShownSprite(data.sprites.other.showdown[direction+"_female"])
+      setShownSprite(data.sprites[direction+"_female"])
     } else if(gender === "female" && shinyToggle === true) {
-      setShownSprite(data.sprites.other.showdown[direction+"_shiny_female"])
+      setShownSprite(data.sprites[direction+"_shiny_female"])
     }
   }
 
@@ -52,7 +58,7 @@ export function Pokedex(props) {
     setShinyToggle(prevShinyToggle => !prevShinyToggle);
   }
   useEffect(() => {
-    getSprite(facingDirection, chosenGender)
+    getSprite(facingDirection, chosenGender, setVariety)
   }, [shinyToggle]);
 
   function rotate() {
@@ -63,8 +69,14 @@ export function Pokedex(props) {
     }
   }
   useEffect(() => {
-    getSprite(facingDirection, chosenGender)
+    getSprite(facingDirection, chosenGender, setVariety)
   }, [facingDirection]);
+
+  async function getTypes() {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${data.varieties[0].pokemon.name}`);
+    const data = await response.json();
+    setTypes(data.types);
+  }
 
   return (
     <div>
@@ -81,27 +93,32 @@ export function Pokedex(props) {
               <FontAwesomeIcon icon={faRotate} transform="grow-7" />
             </a>
           </div>
-          {selectedPokemon.species.name}
+          {selectedPokemon.name}
           
           <br />
-          {selectedPokemon.types.map((type) => (
-            <PokemonType key={type.type.name} type={type.type.name} />
-          ))}
-          
-          <img className="pokemonImage" src={shownSprite} alt={selectedPokemon.species.name} />
+          {(types && 
+          <div>
+                {types.map((type) => (
+                  <PokemonType key={type.type.name} type={type.type.name} />
+                ))}
+                </div>
+            )}
 
-          {(selectedPokemon.sprites.front_female && 
+          
+          <img className="pokemonImage" src={shownSprite} alt={selectedPokemon.name} />
+
+          {(selectedPokemon.has_gender_differences && 
               <div>
                 {(chosenGender === "default" &&
                   <div className="gender-icon">
-                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "female")}>
+                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "female", setVariety)}>
                       <FontAwesomeIcon icon={faMars} transform="grow-7" />
                     </a>
                   </div>       
                 )}
                 {(chosenGender === "female" &&
                   <div className="gender-icon">
-                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "default")}>
+                    <a href="#" className="rotation" onClick={() => getSprite(facingDirection, "default", setVariety)}>
                       <FontAwesomeIcon icon={faVenus} transform="grow-7" />
                     </a>
                   </div> 

@@ -217,3 +217,22 @@ img {
 .iconLeft {
   margin-right: 50pt;
 }
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #66afe9; /* Highlight color on focus */
+}
+
+/* Placeholder style */
+.search-bar::placeholder {
+  color: #999;
+}

@@ -7,7 +7,7 @@ import { SearchBar } from "./SearchBar";
 
 export default function App() {
   const [shownPokemon, setShownPokemon] = useState(undefined);
-  const [currentOffset, setCurrentOffset] = useState(26);
+  const [currentOffset, setCurrentOffset] = useState(0);
 
   async function getInfo(offset) {
     const URL = "https://pokeapi.co/api/v2/pokemon/?offset="+(offset*20);
@@ -15,7 +15,6 @@ export default function App() {
     try {
       const response = await fetch(URL);
       const data = await response.json();
-      console.log(data)
 
       const pokemonToShow = data.results.map(p => (p.name.toLowerCase()));
       setShownPokemon(pokemonToShow)
@@ -39,7 +38,7 @@ export default function App() {
         return modifiedName;
     });
 
-    setShownPokemon(chosenNames)
+    setShownPokemon(chosenNames.slice(0,20))
 
     } else {
       getInfo()
