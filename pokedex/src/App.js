@@ -14,8 +14,6 @@ export default function App() {
     const URL = "https://pokeapi.co/api/v2/pokemon/?offset="+(offset*20);
     setCurrentOffset(offset)
 
-    console.log(offset)
-
     try {
       const response = await fetch(URL);
       const data = await response.json();
