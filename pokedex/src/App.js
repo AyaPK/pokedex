@@ -7,17 +7,20 @@ import { SearchBar } from "./SearchBar";
 
 export default function App() {
   const [shownPokemon, setShownPokemon] = useState(undefined);
-  const [currentOffset, setCurrentOffset] = useState(0);
-  
+  const [currentOffset, setCurrentOffset] = useState(26);
 
   async function getInfo(offset) {
     const URL = "https://pokeapi.co/api/v2/pokemon/?offset="+(offset*20);
     setCurrentOffset(offset)
-
     try {
       const response = await fetch(URL);
       const data = await response.json();
-      setShownPokemon(data);
+      console.log(data)
+
+      const pokemonToShow = data.results.map(p => (p.name.toLowerCase()));
+      setShownPokemon(pokemonToShow)
+
+      
     } catch (error) {
       console.error("Error fetching Pokemon data:", error);
     }
@@ -26,6 +29,25 @@ export default function App() {
   useEffect(() => {
     getInfo(currentOffset);
   }, []);
+
+  async function updateSelectedPokemon(chosenNames) {
+    if(chosenNames) {
+      chosenNames = chosenNames.map(name => {
+        let lowerCaseName = name.toLowerCase();
+        let modifiedName = lowerCaseName.replace(/\s+/g, '-');
+        
+        return modifiedName;
+    });
+
+    setShownPokemon(chosenNames)
+
+    } else {
+      getInfo()
+    }
+
+
+
+  }
 
   return (
     <div className="App">
@@ -44,13 +66,13 @@ export default function App() {
 
       <body>
 
-      <SearchBar />
+      <SearchBar updateSelectedPokemon={updateSelectedPokemon} />
 
         <div className="card-area">
       {(shownPokemon &&
-            shownPokemon.results.map(p => (
+            shownPokemon.map(p => (
               <div className="Card">
-                <Pokedex name={p.name} />
+                <Pokedex name={p.toLowerCase()} />
               </div>
             ))
           )}

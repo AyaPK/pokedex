@@ -17,6 +17,8 @@ export function Pokedex(props) {
         setChosenGender("default");
         setFacingDirection("front");
 
+        console.log(props.name)
+
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${props.name}`);
         const data = await response.json();
         setSelectedPokemon(data);
