@@ -92,7 +92,6 @@ export function Pokedex(props) {
             {selectedPokemon.name}
           </div>
           
-          <br />
           {(types && 
           <div>
             {types.map((type) => (

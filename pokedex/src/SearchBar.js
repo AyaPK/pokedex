@@ -4,7 +4,7 @@ import { allPokemon } from "./AllPokemon";
 export function SearchBar(props) {
   function searchForResults(string) {
     if(string){
-      const filteredPokemon = allPokemon.filter(name => name.toLowerCase().includes(string));
+      const filteredPokemon = allPokemon.filter(name => name.toLowerCase().includes(string.toLowerCase()));
       showSelectedPokemon(filteredPokemon)
     } else {
       showSelectedPokemon(null)
