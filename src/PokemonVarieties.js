@@ -15,7 +15,7 @@ export function PokemonVariety(props) {
 
     return(
         <div>
-            <select onChange={handleVarietyChange}>
+            <select className="variety-dropdown" onChange={handleVarietyChange}>
                 {getNamesFromVarietes().map((option, index) => (
                     <option key={index} value={option}>
                         {option}
