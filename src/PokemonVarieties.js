@@ -10,7 +10,7 @@ export function PokemonVariety(props) {
     }
 
     const handleVarietyChange = (event) => {
-        // @todo handle change
+        props.updateSelectedVariety(event.target.value)
     };
 
     return(

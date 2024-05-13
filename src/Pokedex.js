@@ -39,19 +39,21 @@ export function Pokedex(props) {
     }, [props.name]);
 
     async function getSprite(direction, gender, variety, shiny=false) {
-        setFacingDirection(direction);
-        setChosenGender(gender);
+        if(variety) {
+            setFacingDirection(direction);
+            setChosenGender(gender);
 
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${variety}`);
-        const data = await response.json();
-        if(gender === "default" && shiny === false) {
-            setShownSprite(data.sprites[direction+"_default"])
-        } else if(gender === "default" && shiny === true) {
-            setShownSprite(data.sprites[direction+"_shiny"])
-        } else if(gender === "female" && shiny === false) {
-            setShownSprite(data.sprites[direction+"_female"])
-        } else if(gender === "female" && shiny === true) {
-            setShownSprite(data.sprites[direction+"_shiny_female"])
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${variety}`);
+            const data = await response.json();
+            if(gender === "default" && shiny === false) {
+                setShownSprite(data.sprites[direction+"_default"])
+            } else if(gender === "default" && shiny === true) {
+                setShownSprite(data.sprites[direction+"_shiny"])
+            } else if(gender === "female" && shiny === false) {
+                setShownSprite(data.sprites[direction+"_female"])
+            } else if(gender === "female" && shiny === true) {
+                setShownSprite(data.sprites[direction+"_shiny_female"])
+            }
         }
     }
 
@@ -73,6 +75,10 @@ export function Pokedex(props) {
         getSprite(facingDirection, chosenGender, setVariety, shinyToggle)
     }, [facingDirection]);
 
+    function updateSelectedVariety(name) {
+        setSetVariety(name)
+        getSprite(facingDirection, chosenGender, name, shinyToggle)
+    }
 
     return (
         <div>
@@ -125,7 +131,7 @@ export function Pokedex(props) {
 
                     {(selectedPokemon.varieties.length > 1 &&
                     <div>
-                        <PokemonVariety varieties={selectedPokemon.varieties} p="p"/>
+                        <PokemonVariety varieties={selectedPokemon.varieties} updateSelectedVariety={updateSelectedVariety}/>
                     </div>
                     )}
                 </div>
