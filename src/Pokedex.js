@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagicWandSparkles, faRotate, faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
+import { PokemonVariety } from "./PokemonVarieties";
 
 export function Pokedex(props) {
     const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -38,21 +39,28 @@ export function Pokedex(props) {
     }, [props.name]);
 
     async function getSprite(direction, gender, variety, shiny=false) {
-        setFacingDirection(direction);
-        setChosenGender(gender);
+        if(variety) {
+            setFacingDirection(direction);
+            setChosenGender(gender);
 
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${variety}`);
-        const data = await response.json();
-        if(gender === "default" && shiny === false) {
-            setShownSprite(data.sprites[direction+"_default"])
-        } else if(gender === "default" && shiny === true) {
-            setShownSprite(data.sprites[direction+"_shiny"])
-        } else if(gender === "female" && shiny === false) {
-            setShownSprite(data.sprites[direction+"_female"])
-        } else if(gender === "female" && shiny === true) {
-            setShownSprite(data.sprites[direction+"_shiny_female"])
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${variety}`);
+            const data = await response.json();
+            if(gender === "default" && shiny === false) {
+                setShownSprite(data.sprites[direction+"_default"])
+            } else if(gender === "default" && shiny === true) {
+                setShownSprite(data.sprites[direction+"_shiny"])
+            } else if(gender === "female" && shiny === false) {
+                setShownSprite(data.sprites[direction+"_female"])
+            } else if(gender === "female" && shiny === true) {
+                setShownSprite(data.sprites[direction+"_shiny_female"])
+            }
         }
     }
+    useEffect(() => {
+        if (shownSprite == null) {
+            setShownSprite("no-sprite-found.png")
+        }
+    }, [shownSprite]);
 
     function toggleShiny() {
         setShinyToggle(prevShinyToggle => !prevShinyToggle);
@@ -72,6 +80,18 @@ export function Pokedex(props) {
         getSprite(facingDirection, chosenGender, setVariety, shinyToggle)
     }, [facingDirection]);
 
+    function updateSelectedVariety(name) {
+        setSetVariety(name)
+        getSprite(facingDirection, chosenGender, name, shinyToggle)
+        getTypes(name)
+    }
+
+    async function getTypes(name) {
+        const types = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+        const typesResponse = await types.json();
+
+        setTypes(typesResponse.types);
+    }
 
     return (
         <div>
@@ -120,6 +140,12 @@ export function Pokedex(props) {
                   </div> 
                   )}
               </div>
+                    )}
+
+                    {(selectedPokemon.varieties.length > 1 &&
+                    <div>
+                        <PokemonVariety varieties={selectedPokemon.varieties} updateSelectedVariety={updateSelectedVariety} name={selectedPokemon.name}/>
+                    </div>
                     )}
                 </div>
             )}

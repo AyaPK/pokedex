@@ -15,6 +15,7 @@ input {
   margin: 10px;
 }
 
+
 * {
   font-family: "Source Code Pro";
 }
@@ -241,6 +242,15 @@ img {
   font-size: 16px;
   outline: none;
   transition: border-color 0.3s ease;
+}
+
+.variety-dropdown {
+  width: 90%;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  left: 10px;
 }
 
 .search-bar:focus {
