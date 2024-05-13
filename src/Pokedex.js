@@ -136,7 +136,7 @@ export function Pokedex(props) {
 
                     {(selectedPokemon.varieties.length > 1 &&
                     <div>
-                        <PokemonVariety varieties={selectedPokemon.varieties} updateSelectedVariety={updateSelectedVariety}/>
+                        <PokemonVariety varieties={selectedPokemon.varieties} updateSelectedVariety={updateSelectedVariety} name={selectedPokemon.name}/>
                     </div>
                     )}
                 </div>
