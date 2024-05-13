@@ -56,6 +56,11 @@ export function Pokedex(props) {
             }
         }
     }
+    useEffect(() => {
+        if (shownSprite == null) {
+            setShownSprite("no-sprite-found.png")
+        }
+    }, [shownSprite]);
 
     function toggleShiny() {
         setShinyToggle(prevShinyToggle => !prevShinyToggle);
