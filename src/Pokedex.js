@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { PokemonType } from "./PokemonType";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagicWandSparkles, faRotate, faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
+import { PokemonVariety } from "./PokemonVarieties";
 
 export function Pokedex(props) {
     const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -120,6 +121,12 @@ export function Pokedex(props) {
                   </div> 
                   )}
               </div>
+                    )}
+
+                    {(selectedPokemon.varieties.length > 1 &&
+                    <div>
+                        <PokemonVariety varieties={selectedPokemon.varieties} p="p"/>
+                    </div>
                     )}
                 </div>
             )}
