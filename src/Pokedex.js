@@ -83,6 +83,14 @@ export function Pokedex(props) {
     function updateSelectedVariety(name) {
         setSetVariety(name)
         getSprite(facingDirection, chosenGender, name, shinyToggle)
+        getTypes(name)
+    }
+
+    async function getTypes(name) {
+        const types = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+        const typesResponse = await types.json();
+
+        setTypes(typesResponse.types);
     }
 
     return (
