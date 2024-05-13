@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
-      run: cd pokedex && npm install
+      run: npm install
     - name: Run ESLint
-      run: cd pokedex && npx eslint . --ext .js,.jsx,.ts,.tsx
+      run: npx eslint . --ext .js,.jsx,.ts,.tsx
