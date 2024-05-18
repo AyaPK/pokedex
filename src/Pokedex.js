@@ -108,6 +108,9 @@ export function Pokedex(props) {
                             <FontAwesomeIcon className="button-icon" icon={faRotate} transform="grow-7" />
                         </button>
                     </div>
+                    <div className="pokedex-number">
+                        #{selectedPokemon.pokedex_numbers[0].entry_number}
+                    </div>
                     <div className="pokemon-name">
                         {selectedPokemon.name}
                     </div>

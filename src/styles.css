@@ -264,3 +264,12 @@ img {
 .pokemon-name::first-letter {
   text-transform: capitalize;
 }
+
+.pokedex-number {
+  font-weight: bold;
+  color: rgb(175, 175, 175);
+  position: absolute;
+  top: 10;
+  left: 0;
+  margin-left: 10px;
+}
