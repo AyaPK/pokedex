@@ -27,7 +27,6 @@ input {
 $shine-color: rgba(148, 148, 148, 0.452);
 .Card {
   position: relative;
-  padding: 10px;
   box-sizing: border-box;
   width: 250px;
   display: flex;
@@ -38,10 +37,50 @@ $shine-color: rgba(148, 148, 148, 0.452);
   overflow: hidden;
   box-shadow: 5px 13px 10px -7px rgba(0, 0, 0, 0.1);
   margin: 2px;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; // Add box-shadow to the transition
+  transition: transform 0.3s ease;
 
   .inner-card {
     width: 100%;
+    padding: 10px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(135deg, transparent 0%, $shine-color 25%, transparent 50%, $shine-color 75%, transparent 100%);
+      transition: transform 1s ease;
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    &:hover {
+      background-color: #e7e7e7;
+      transform: translateY(0);
+      box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1);
+  
+      .variety-dropdown {
+        border-color: #494949;
+        background-color: rgba(165, 165, 165, 0);
+      }
+    }
+  
+    &:hover:before {
+      transform: translate(25%, 25%); // Move the shine across the card
+      opacity: 1; // Make the shine visible on hover
+    }
+  
+    &:not(:hover):before {
+      transform: translate(); // Revert the shine transformation when not hovered
+      opacity: 0; // Hide the shine when not hovered
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1);
   }
 
   .variety-dropdown {
@@ -51,40 +90,6 @@ $shine-color: rgba(148, 148, 148, 0.452);
     font-size: 16px;
     outline: none;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-  }
-
-    &:before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(135deg, transparent 0%, $shine-color 25%, transparent 50%, $shine-color 75%, transparent 100%);
-    transition: transform 0.5s ease;
-    opacity: 0;
-    z-index: -1;
-  }
-
-  &:hover {
-    background-color: #e7e7e7;
-    transform: translateY(-3px);
-    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1);
-
-    .variety-dropdown {
-      border-color: #494949;
-      background-color: rgba(165, 165, 165, 0);
-    }
-  }
-
-  &:hover:before {
-    transform: translate(25%, 25%); // Move the shine across the card
-    opacity: 1; // Make the shine visible on hover
-  }
-
-  &:not(:hover):before {
-    transform: translate(); // Revert the shine transformation when not hovered
-    opacity: 0; // Hide the shine when not hovered
   }
 }
 
