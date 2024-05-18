@@ -97,7 +97,7 @@ export function Pokedex(props) {
     }
 
     return (
-        <div className={"inner-card " + (types && types[0] && types[0].type ? types[0].type.name : "")}>
+        <div className={"inner-card " + (types && types[0] && types[0].type ? types[0].type.name : "")+(types && types[1] && types[1].type ? "-"+types[1].type.name : "")}>
             {selectedSpecies && (
                 <div>
                     <div className="shiny-icon">
