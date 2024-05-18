@@ -1,2140 +1,2249 @@
+&.normal {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $normal 25%, transparent 50%, $normal 75%, transparent 100%);
+    }
+  }
+  
+  &.fire {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $fire 25%, transparent 50%, $fire 75%, transparent 100%);
+    }
+  }
+  
+  &.water {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $water 25%, transparent 50%, $water 75%, transparent 100%);
+    }
+  }
+  
+  &.electric {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $electric 25%, transparent 50%, $electric 75%, transparent 100%);
+    }
+  }
+  
+  &.grass {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $grass 25%, transparent 50%, $grass 75%, transparent 100%);
+    }
+  }
+  
+  &.ice {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $ice 25%, transparent 50%, $ice 75%, transparent 100%);
+    }
+  }
+  
+  &.ground {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $ground 25%, transparent 50%, $ground 75%, transparent 100%);
+    }
+  }
+  
+  &.flying {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $flying 25%, transparent 50%, $flying 75%, transparent 100%);
+    }
+  }
+  
+  &.ghost {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $ghost 25%, transparent 50%, $ghost 75%, transparent 100%);
+    }
+  }
+  
+  &.rock {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $rock 25%, transparent 50%, $rock 75%, transparent 100%);
+    }
+  }
+  
+  &.fighting {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $fighting 25%, transparent 50%, $fighting 75%, transparent 100%);
+    }
+  }
+  
+  &.poison {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $poison 25%, transparent 50%, $poison 75%, transparent 100%);
+    }
+  }
+  
+  &.psychic {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $psychic 25%, transparent 50%, $psychic 75%, transparent 100%);
+    }
+  }
+  
+  &.bug {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $bug 25%, transparent 50%, $bug 75%, transparent 100%);
+    }
+  }
+  
+  &.dark {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $dark 25%, transparent 50%, $dark 75%, transparent 100%);
+    }
+  }
+  
+  &.steel {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $steel 25%, transparent 50%, $steel 75%, transparent 100%);
+    }
+  }
+  
+  &.dragon {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $dragon 25%, transparent 50%, $dragon 75%, transparent 100%);
+    }
+  }
+  
+  &.fairy {
+    &:before {
+      background: linear-gradient(135deg, transparent 0%, $fairy 25%, transparent 50%, $fairy 75%, transparent 100%);
+    }
+  }
+  
+
 &.normal-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.fire-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.normal-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.water-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.normal-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.electric-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.normal-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.grass-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.normal-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.ice-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.normal-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.ground-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.normal-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.flying-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.normal-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.ghost-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.normal-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.rock-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.normal-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.fighting-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.normal-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.poison-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.normal-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.psychic-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.normal-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.bug-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.normal-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.dark-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.normal-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.steel-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.normal-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.dragon-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.normal-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.normal-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $normal 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-normal {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $normal 45%, transparent 100%);
-        }
+&.fairy-normal {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $normal 45%, transparent 100%);
     }
+}
 
 
-    &.fire-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.fire-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.water-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.fire-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.electric-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.fire-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.grass-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.fire-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.ice-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.fire-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.ground-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.fire-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.flying-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.fire-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.ghost-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.fire-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.rock-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.fire-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.fighting-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.fire-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.poison-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.fire-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.psychic-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.fire-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.bug-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.fire-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.dark-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.fire-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.steel-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.fire-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.dragon-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.fire-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.fire-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fire 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-fire {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $fire 45%, transparent 100%);
-        }
+&.fairy-fire {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $fire 45%, transparent 100%);
     }
+}
 
 
-    &.water-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.water-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.electric-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.water-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.grass-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.water-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.ice-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.water-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.ground-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.water-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.flying-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.water-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.ghost-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.water-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.rock-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.water-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.fighting-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.water-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.poison-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.water-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.psychic-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.water-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.bug-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.water-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.dark-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.water-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.steel-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.water-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.dragon-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.water-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.water-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $water 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-water {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $water 45%, transparent 100%);
-        }
+&.fairy-water {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $water 45%, transparent 100%);
     }
+}
 
 
-    &.electric-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.electric-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.grass-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.electric-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.ice-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.electric-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.ground-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.electric-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.flying-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.electric-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.ghost-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.electric-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.rock-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.electric-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.fighting-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.electric-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.poison-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.electric-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.psychic-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.electric-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.bug-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.electric-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.dark-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.electric-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.steel-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.electric-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.dragon-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.electric-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.electric-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $electric 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-electric {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $electric 45%, transparent 100%);
-        }
+&.fairy-electric {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $electric 45%, transparent 100%);
     }
+}
 
 
-    &.grass-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.grass-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.ice-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.grass-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.ground-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.grass-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.flying-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.grass-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.ghost-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.grass-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.rock-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.grass-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.fighting-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.grass-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.poison-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.grass-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.psychic-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.grass-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.bug-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.grass-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.dark-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.grass-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.steel-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.grass-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.dragon-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.grass-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.grass-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $grass 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-grass {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $grass 45%, transparent 100%);
-        }
+&.fairy-grass {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $grass 45%, transparent 100%);
     }
+}
 
 
-    &.ice-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.ice-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.ground-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.ice-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.flying-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.ice-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.ghost-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.ice-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.rock-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.ice-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.fighting-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.ice-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.poison-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.ice-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.psychic-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.ice-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.bug-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.ice-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.dark-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.ice-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.steel-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.ice-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.dragon-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ice-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.ice-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ice 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-ice {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $ice 45%, transparent 100%);
-        }
+&.fairy-ice {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $ice 45%, transparent 100%);
     }
+}
 
 
-    &.ground-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.ground-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.flying-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.ground-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.ghost-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.ground-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.rock-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.ground-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.fighting-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.ground-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.poison-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.ground-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.psychic-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.ground-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.bug-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.ground-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.dark-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.ground-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.steel-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.ground-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.dragon-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.ground-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.ground-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ground 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-ground {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $ground 45%, transparent 100%);
-        }
+&.fairy-ground {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $ground 45%, transparent 100%);
     }
+}
 
 
-    &.flying-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.flying-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.ghost-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.flying-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.rock-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.flying-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.fighting-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.flying-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.poison-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.flying-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.psychic-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.flying-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.bug-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.flying-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.dark-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.flying-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.steel-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.flying-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.dragon-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.flying-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.flying-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $flying 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-flying {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $flying 45%, transparent 100%);
-        }
+&.fairy-flying {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $flying 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.ghost-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.rock-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.ghost-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.fighting-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.ghost-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.poison-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.ghost-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.psychic-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.ghost-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.bug-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.ghost-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.dark-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.ghost-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.steel-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.ghost-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.dragon-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.ghost-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.ghost-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $ghost 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-ghost {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $ghost 45%, transparent 100%);
-        }
+&.fairy-ghost {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $ghost 45%, transparent 100%);
     }
+}
 
 
-    &.rock-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.rock-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.fighting-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.rock-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.poison-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.rock-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.psychic-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.rock-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.bug-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.rock-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.dark-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.rock-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.steel-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.rock-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.dragon-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.rock-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.rock-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $rock 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-rock {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $rock 45%, transparent 100%);
-        }
+&.fairy-rock {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $rock 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.fighting-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.poison-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.fighting-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.psychic-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.fighting-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.bug-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.fighting-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.dark-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.fighting-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.steel-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.fighting-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.dragon-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.fighting-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.fighting-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fighting 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-fighting {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $fighting 45%, transparent 100%);
-        }
+&.fairy-fighting {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $fighting 45%, transparent 100%);
     }
+}
 
 
-    &.poison-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.poison-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.psychic-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.poison-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.bug-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.poison-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.dark-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.poison-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.steel-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.poison-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.dragon-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.poison-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.poison-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $poison 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-poison {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $poison 45%, transparent 100%);
-        }
+&.fairy-poison {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $poison 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.psychic-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.bug-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.psychic-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.dark-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.psychic-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.steel-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.psychic-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.dragon-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.psychic-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.psychic-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $psychic 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-psychic {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $psychic 45%, transparent 100%);
-        }
+&.fairy-psychic {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $psychic 45%, transparent 100%);
     }
+}
 
 
-    &.bug-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.bug-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.dark-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.bug-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.steel-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.bug-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.dragon-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.bug-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.bug-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $bug 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-bug {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $bug 45%, transparent 100%);
-        }
+&.fairy-bug {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $bug 45%, transparent 100%);
     }
+}
 
 
-    &.dark-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.dark-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.steel-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.dark-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.dragon-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.dark-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.dark-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dark 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-dark {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $dark 45%, transparent 100%);
-        }
+&.fairy-dark {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $dark 45%, transparent 100%);
     }
+}
 
 
-    &.steel-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.steel-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.dragon-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.steel-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.steel-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $steel 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-steel {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $steel 45%, transparent 100%);
-        }
+&.fairy-steel {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $steel 45%, transparent 100%);
     }
+}
 
 
-    &.dragon-fairy {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $fairy 45%, transparent 100%);
-        }
+&.dragon-fairy {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $dragon 15%, transparent 30%, $fairy 45%, transparent 100%);
     }
+}
 
 
-    &.fairy-dragon {
-        &:before {
-            background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $dragon 45%, transparent 100%);
-        }
+&.fairy-dragon {
+    &:before {
+        background: linear-gradient(135deg, transparent 0%, $fairy 15%, transparent 30%, $dragon 45%, transparent 100%);
     }
+}
