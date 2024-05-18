@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap:100,300,400,700");
+@import "css/types.scss";
 
 body {
   background-color: #d2dbdd;
@@ -26,7 +27,6 @@ input {
 
 .Card {
   position: relative;
-  padding: 10px;
   box-sizing: border-box;
   width: 250px;
   display: flex;
@@ -37,9 +37,22 @@ input {
   overflow: hidden;
   box-shadow: 5px 13px 10px -7px rgba(0, 0, 0, 0.1);
   margin: 2px;
+  transition: transform 0.3s ease;
 
-  .inner-card {
-    width: 100%;
+  @import "css/inner-card.scss";
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .variety-dropdown {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
   }
 }
 
@@ -72,87 +85,92 @@ img {
   border: 1px solid #44685e;
 
   &.normal {
-    background-color: #a8a878;
+    background-color: $normal;
     border: 1px solid #6d6d4e;
   }
 
   &.fire {
-    background-color: #f08030;
+    background-color: $fire;
     border: 1px solid #9c531f;
   }
 
   &.water {
-    background-color: #6890f0;
+    background-color: $water;
     border: 1px solid #445e9c;
   }
 
   &.electric {
-    background-color: #f8d030;
+    background-color: $electric;
     border: 1px solid #a1871f;
   }
 
   &.grass {
-    background-color: #78c850;
+    background-color: $grass;
     border: 1px solid #4e8234;
   }
 
   &.ice {
-    background-color: #98d8d8;
+    background-color: $ice;
     border: 1px solid #638d8d;
   }
 
   &.ground {
-    background-color: #e0c068;
+    background-color: $ground;
     border: 1px solid #927d44;
   }
 
   &.flying {
-    background-color: #a890f0;
+    background-color: $flying;
     border: 1px solid #6d5e9c;
   }
 
   &.ghost {
-    background-color: #705898;
+    background-color: $ghost;
     border: 1px solid #493963;
   }
 
   &.rock {
-    background-color: #b8a038;
+    background-color: $rock;
     border: 1px solid #786824;
   }
 
   &.fighting {
-    background-color: #c03028;
+    background-color: $fighting;
     border: 1px solid #7d1f1a;
   }
 
   &.poison {
-    background-color: #a040a0;
+    background-color: $poison;
     border: 1px solid #682a68;
   }
 
   &.psychic {
-    background-color: #f85888;
+    background-color: $psychic;
     border: 1px solid #a13959;
   }
 
   &.bug {
-    background-color: #a8b820;
+    background-color: $bug;
     border: 1px solid #6d7815;
   }
 
   &.dark {
-    background-color: #705848;
+    background-color: $dark;
     border: 1px solid #49392f;
   }
 
   &.steel {
-    background-color: #b8b8d0;
+    background-color: $steel;
     border: 1px solid #787887;
   }
 
   &.dragon {
-    background-color: #7038f8;
+    background-color: $dragon;
+    border: 1px solid #4924a1;
+  }
+  
+  &.fairy {
+    background-color: $fairy;
     border: 1px solid #4924a1;
   }
 }
@@ -225,15 +243,6 @@ img {
   transition: border-color 0.3s ease;
 }
 
-.variety-dropdown {
-  width: 70%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
 .search-bar:focus {
   border-color: #66afe9;
 }
@@ -274,7 +283,7 @@ img {
     p {
       color: #202020;
       font-family: 'Courier New', Courier, monospace;
-      font-size: 10pt;
+      font-size: 11pt;
       line-height: 0.7;
       margin: 0.1em 0;
       padding-top: 5px;
