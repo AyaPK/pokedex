@@ -3,8 +3,10 @@ import { PokemonType } from "./PokemonType";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagicWandSparkles, faRotate, faMars, faVenus } from "@fortawesome/free-solid-svg-icons";
 import { PokemonVariety } from "./PokemonVarieties";
+import { PokemonDetails } from "./PokemonDetails";
 
 export function Pokedex(props) {
+    const [selectedSpecies, setSelectedSpecies] = useState(null);
     const [selectedPokemon, setSelectedPokemon] = useState(null);
     const [shownSprite, setShownSprite] = useState(null);
     const [shinyToggle, setShinyToggle] = useState(false);
@@ -20,14 +22,15 @@ export function Pokedex(props) {
                 setChosenGender("default");
                 setFacingDirection("front");
 
-                const response = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${props.name}`);
-                const data = await response.json();
+                const species = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${props.name}`);
+                const data = await species.json();
 
-                const types = await fetch(`https://pokeapi.co/api/v2/pokemon/${data.varieties[0].pokemon.name}`);
-                const typesResponse = await types.json();
+                const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${data.varieties[0].pokemon.name}`);
+                const pokemonResponse = await pokemon.json();
 
-                setTypes(typesResponse.types);
-                setSelectedPokemon(data)
+                setTypes(pokemonResponse.types);
+                setSelectedSpecies(data);
+                setSelectedPokemon(pokemonResponse);
                 setSetVariety(data.varieties[0].pokemon.name)
                 getSprite("front", "default", data.varieties[0].pokemon.name)
             } catch (error) {
@@ -94,8 +97,8 @@ export function Pokedex(props) {
     }
 
     return (
-        <div>
-            {selectedPokemon && (
+        <div className="inner-card">
+            {selectedSpecies && (
                 <div>
                     <div className="shiny-icon">
                         <button href="#" className="hidden-button" onClick={() => toggleShiny()}>
@@ -108,8 +111,11 @@ export function Pokedex(props) {
                             <FontAwesomeIcon className="button-icon" icon={faRotate} transform="grow-7" />
                         </button>
                     </div>
+                    <div className="pokedex-number">
+                        #{selectedSpecies.pokedex_numbers[0].entry_number}
+                    </div>
                     <div className="pokemon-name">
-                        {selectedPokemon.name}
+                        {selectedSpecies.name}
                     </div>
           
                     {(types && 
@@ -121,9 +127,9 @@ export function Pokedex(props) {
                     )}
 
           
-                    <img className="pokemonImage" src={shownSprite} alt={selectedPokemon.name} />
+                    <img className="pokemonImage" src={shownSprite} alt={selectedSpecies.name} />
 
-                    {(selectedPokemon.has_gender_differences && 
+                    {(selectedSpecies.has_gender_differences && 
               <div>
                   {(chosenGender === "default" &&
                   <div className="gender-icon">
@@ -142,13 +148,23 @@ export function Pokedex(props) {
               </div>
                     )}
 
-                    {(selectedPokemon.varieties.length > 1 &&
-                    <div>
-                        <PokemonVariety varieties={selectedPokemon.varieties} updateSelectedVariety={updateSelectedVariety} name={selectedPokemon.name}/>
+                    <div className="variety-container">
+
+                        {(selectedSpecies.varieties.length > 1 &&
+                        <div>
+                            <PokemonVariety varieties={selectedSpecies.varieties} updateSelectedVariety={updateSelectedVariety} name={selectedSpecies.name}/>
+                        </div>
+                        )}
                     </div>
-                    )}
                 </div>
             )}
+            
+            {selectedSpecies &&
+                <div className="details-area">
+                    <PokemonDetails selectedPokemon={selectedPokemon} selectedSpecies={selectedSpecies} />
+                </div>
+            }
+
         </div>
     );
 }

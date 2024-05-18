@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Pokedex } from "./Pokedex";
-import "./styles.css";
+import "./styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { SearchBar } from "./SearchBar";
