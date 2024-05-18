@@ -1,4 +1,5 @@
 import React from "react";
+import { PokemonDetail } from "./pokemonDetail";
 
 export function PokemonDetails(props) {
     const pokemon = props.selectedPokemon;
@@ -6,16 +7,8 @@ export function PokemonDetails(props) {
     return (
         <div>
             <div className="pokemon-details">
-                <div className="detail">
-                    <p className="statistic">Height:</p>
-                    <p className="value">{pokemon.height*10}cm</p>
-                </div>
-
-                <div className="detail">
-                    <p className="statistic">Weight:</p>
-                    <p className="value">{pokemon.weight}lbs</p>
-                </div>
-                
+                <PokemonDetail statistic={"height"} value={pokemon.height/10} unit={"m"} />
+                <PokemonDetail statistic={"weight"} value={pokemon.weight/10} unit={"kg"} />
             </div>
         </div>
     )

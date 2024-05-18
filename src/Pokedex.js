@@ -148,12 +148,14 @@ export function Pokedex(props) {
               </div>
                     )}
 
-                    {(selectedSpecies.varieties.length > 1 &&
-                    <div>
-                        <PokemonVariety varieties={selectedSpecies.varieties} updateSelectedVariety={updateSelectedVariety} name={selectedSpecies.name}/>
-                    </div>
-                    )}
+                    <div className="variety-container">
 
+                        {(selectedSpecies.varieties.length > 1 &&
+                        <div>
+                            <PokemonVariety varieties={selectedSpecies.varieties} updateSelectedVariety={updateSelectedVariety} name={selectedSpecies.name}/>
+                        </div>
+                        )}
+                    </div>
                 </div>
             )}
             
