@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap:100,300,400,700");
+@import "css/types.scss";
 
 body {
   background-color: #d2dbdd;
@@ -24,7 +25,6 @@ input {
   margin: 10px;
 }
 
-$shine-color: rgba(148, 148, 148, 0.452);
 .Card {
   position: relative;
   box-sizing: border-box;
@@ -39,44 +39,7 @@ $shine-color: rgba(148, 148, 148, 0.452);
   margin: 2px;
   transition: transform 0.3s ease;
 
-  .inner-card {
-    width: 100%;
-    padding: 10px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(135deg, transparent 0%, $shine-color 25%, transparent 50%, $shine-color 75%, transparent 100%);
-      transition: transform 1s ease;
-      opacity: 0;
-      z-index: -1;
-    }
-  
-    &:hover {
-      background-color: #e7e7e7;
-      transform: translateY(0);
-      box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1);
-  
-      .variety-dropdown {
-        border-color: #494949;
-        background-color: rgba(165, 165, 165, 0);
-      }
-    }
-  
-    &:hover:before {
-      transform: translate(25%, 25%); // Move the shine across the card
-      opacity: 1; // Make the shine visible on hover
-    }
-  
-    &:not(:hover):before {
-      transform: translate(); // Revert the shine transformation when not hovered
-      opacity: 0; // Hide the shine when not hovered
-    }
-  }
+  @import "css/inner-card.scss";
 
   &:hover {
     transform: translateY(-10px);
@@ -122,87 +85,92 @@ img {
   border: 1px solid #44685e;
 
   &.normal {
-    background-color: #a8a878;
+    background-color: $normal;
     border: 1px solid #6d6d4e;
   }
 
   &.fire {
-    background-color: #f08030;
+    background-color: $fire;
     border: 1px solid #9c531f;
   }
 
   &.water {
-    background-color: #6890f0;
+    background-color: $water;
     border: 1px solid #445e9c;
   }
 
   &.electric {
-    background-color: #f8d030;
+    background-color: $electric;
     border: 1px solid #a1871f;
   }
 
   &.grass {
-    background-color: #78c850;
+    background-color: $grass;
     border: 1px solid #4e8234;
   }
 
   &.ice {
-    background-color: #98d8d8;
+    background-color: $ice;
     border: 1px solid #638d8d;
   }
 
   &.ground {
-    background-color: #e0c068;
+    background-color: $ground;
     border: 1px solid #927d44;
   }
 
   &.flying {
-    background-color: #a890f0;
+    background-color: $flying;
     border: 1px solid #6d5e9c;
   }
 
   &.ghost {
-    background-color: #705898;
+    background-color: $ghost;
     border: 1px solid #493963;
   }
 
   &.rock {
-    background-color: #b8a038;
+    background-color: $rock;
     border: 1px solid #786824;
   }
 
   &.fighting {
-    background-color: #c03028;
+    background-color: $fighting;
     border: 1px solid #7d1f1a;
   }
 
   &.poison {
-    background-color: #a040a0;
+    background-color: $poison;
     border: 1px solid #682a68;
   }
 
   &.psychic {
-    background-color: #f85888;
+    background-color: $psychic;
     border: 1px solid #a13959;
   }
 
   &.bug {
-    background-color: #a8b820;
+    background-color: $bug;
     border: 1px solid #6d7815;
   }
 
   &.dark {
-    background-color: #705848;
+    background-color: $dark;
     border: 1px solid #49392f;
   }
 
   &.steel {
-    background-color: #b8b8d0;
+    background-color: $steel;
     border: 1px solid #787887;
   }
 
   &.dragon {
-    background-color: #7038f8;
+    background-color: $dragon;
+    border: 1px solid #4924a1;
+  }
+  
+  &.fairy {
+    background-color: $fairy;
     border: 1px solid #4924a1;
   }
 }

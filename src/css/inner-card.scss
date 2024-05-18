@@ -1,0 +1,75 @@
+@import "./types.scss";
+
+$shine-color-default: rgba(148, 148, 148, 0.452);
+
+@mixin gradient-background($color) {
+  background: linear-gradient(135deg, transparent 0%, $color 25%, transparent 50%, $color 75%, transparent 100%);
+}
+
+.inner-card {
+  width: 100%;
+  padding: 10px;
+  position: relative; // Ensure the card is positioned relative to handle absolute positioning of :before
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transition: transform 1s ease;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  &:hover {
+    background-color: #e7e7e7;
+    transform: translateY(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  
+    .variety-dropdown {
+      border-color: #494949;
+      background-color: rgba(165, 165, 165, 0);
+    }
+  }
+  
+  &:hover:before {
+    transform: translate(25%, 25%);
+    opacity: 1;
+  }
+  
+  &:not(:hover):before {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  
+  @each $type, $color in (
+    normal: $normal,
+    fire: $fire,
+    water: $water,
+    electric: $electric,
+    grass: $grass,
+    ice: $ice,
+    ground: $ground,
+    flying: $flying,
+    ghost: $ghost,
+    rock: $rock,
+    fighting: $fighting,
+    poison: $poison,
+    psychic: $psychic,
+    bug: $bug,
+    dark: $dark,
+    steel: $steel,
+    dragon: $dragon,
+    fairy: $fairy
+  ) {
+    &.#{$type} {
+      &:before {
+        @include gradient-background($color);
+      }
+    }
+  }
+  
+  // Add more classes as needed
+}
