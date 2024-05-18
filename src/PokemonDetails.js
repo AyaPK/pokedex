@@ -11,7 +11,7 @@ export function PokemonDetails(props) {
                 <PokemonDetail statistic={"height"} value={pokemon.height/10} unit={"m"} />
                 <PokemonDetail statistic={"weight"} value={pokemon.weight/10} unit={"kg"} />
                 <PokemonDetail statistic={"capture rate"} value={species.capture_rate} />
-                <PokemonDetail statistic={"shape"} value={species.shape.name} />
+                <PokemonDetail statistic={"shape"} value={species.shape?.name ?? "unknown"} />
                 
                 {species.egg_groups.map((group, index) => (
                     <PokemonDetail key={group.name} statistic={"egg group "+(index+1)} value={group.name} />
