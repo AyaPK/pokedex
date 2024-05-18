@@ -28,16 +28,15 @@ input {
   position: relative;
   padding: 10px;
   box-sizing: border-box;
-  width: 330px;
+  width: 250px;
   display: flex;
   justify-content: center;
-  max-width: 220px;
+  max-width: 250px;
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 5px 13px 10px -7px rgba(0, 0, 0, 0.1);
   margin: 2px;
-  height: 240px;
 
   .inner-card {
     width: 100%;
@@ -264,7 +263,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10px;
+    margin-left: 1px;
   
     .detail {
       display: flex;
@@ -275,7 +274,7 @@ img {
     p {
       color: #202020;
       font-family: 'Courier New', Courier, monospace;
-      font-size: 1em;
+      font-size: 10pt;
       line-height: 0.7;
       margin: 0.1em 0;
       padding-top: 5px;

@@ -161,7 +161,7 @@ export function Pokedex(props) {
             
             {selectedSpecies &&
                 <div className="details-area">
-                    <PokemonDetails selectedPokemon={selectedPokemon} />
+                    <PokemonDetails selectedPokemon={selectedPokemon} selectedSpecies={selectedSpecies} />
                 </div>
             }
 
