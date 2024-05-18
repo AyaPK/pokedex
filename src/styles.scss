@@ -4,6 +4,15 @@ body {
   background-color: #d2dbdd;
 }
 
+* {
+  font-family: "Source Code Pro";
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
 .card-area {
   display: flex;
   display: -webkit-flex;
@@ -15,37 +24,29 @@ input {
   margin: 10px;
 }
 
-
-* {
-  font-family: "Source Code Pro";
-}
-
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
 .Card {
   position: relative;
-  padding: 30px;
-  padding-top: 10px;
+  padding: 10px;
   box-sizing: border-box;
-  width: 100%;
+  width: 330px;
   display: flex;
   justify-content: center;
   max-width: 220px;
   background-color: #fff;
-  width: 330px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 5px 13px 10px -7px rgba(0, 0, 0, 0.1);
   margin: 2px;
-  height: 200px;
+  height: 240px;
+
+  .inner-card {
+    width: 100%;
+  }
 }
 
 .pokemonImage {
   height: 100px;
-  object-fit:scale-down;
+  object-fit: scale-down;
   object-position: bottom;
 }
 
@@ -62,115 +63,111 @@ img {
 .type {
   margin-left: 10px;
   margin-bottom: 1%;
-  padding: 5px 8px 5px 8px;
+  padding: 5px 8px;
   display: inline-block;
   border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -o-border-radius: 6px;
   font-size: 13px;
   font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
   color: #fff;
   background-color: #68a090;
   border: 1px solid #44685e;
+
+  &.normal {
+    background-color: #a8a878;
+    border: 1px solid #6d6d4e;
+  }
+
+  &.fire {
+    background-color: #f08030;
+    border: 1px solid #9c531f;
+  }
+
+  &.water {
+    background-color: #6890f0;
+    border: 1px solid #445e9c;
+  }
+
+  &.electric {
+    background-color: #f8d030;
+    border: 1px solid #a1871f;
+  }
+
+  &.grass {
+    background-color: #78c850;
+    border: 1px solid #4e8234;
+  }
+
+  &.ice {
+    background-color: #98d8d8;
+    border: 1px solid #638d8d;
+  }
+
+  &.ground {
+    background-color: #e0c068;
+    border: 1px solid #927d44;
+  }
+
+  &.flying {
+    background-color: #a890f0;
+    border: 1px solid #6d5e9c;
+  }
+
+  &.ghost {
+    background-color: #705898;
+    border: 1px solid #493963;
+  }
+
+  &.rock {
+    background-color: #b8a038;
+    border: 1px solid #786824;
+  }
+
+  &.fighting {
+    background-color: #c03028;
+    border: 1px solid #7d1f1a;
+  }
+
+  &.poison {
+    background-color: #a040a0;
+    border: 1px solid #682a68;
+  }
+
+  &.psychic {
+    background-color: #f85888;
+    border: 1px solid #a13959;
+  }
+
+  &.bug {
+    background-color: #a8b820;
+    border: 1px solid #6d7815;
+  }
+
+  &.dark {
+    background-color: #705848;
+    border: 1px solid #49392f;
+  }
+
+  &.steel {
+    background-color: #b8b8d0;
+    border: 1px solid #787887;
+  }
+
+  &.dragon {
+    background-color: #7038f8;
+    border: 1px solid #4924a1;
+  }
 }
 
-.normal {
-  background-color: #a8a878;
-  border: 1px solid #6d6d4e;
-}
-
-.fire {
-  background-color: #f08030;
-  border: 1px solid #9c531f;
-}
-
-.water {
-  background-color: #6890f0;
-  border: 1px solid #445e9c;
-}
-
-.electric {
-  background-color: #f8d030;
-  border: 1px solid #a1871f;
-}
-
-.grass {
-  background-color: #78c850;
-  border: 1px solid #4e8234;
-}
-
-.ice {
-  background-color: #98d8d8;
-  border: 1px solid #638d8d;
-}
-
-.ground {
-  background-color: #e0c068;
-  border: 1px solid #927d44;
-}
-
-.flying {
-  background-color: #a890f0;
-  border: 1px solid #6d5e9c;
-}
-
-.ghost {
-  background-color: #705898;
-  border: 1px solid #493963;
-}
-
-.rock {
-  background-color: #b8a038;
-  border: 1px solid #786824;
-}
-
-.fighting {
-  background-color: #c03028;
-  border: 1px solid #7d1f1a;
-}
-
-.poison {
-  background-color: #a040a0;
-  border: 1px solid #682a68;
-}
-
-.psychic {
-  background-color: #f85888;
-  border: 1px solid #a13959;
-}
-
-.bug {
-  background-color: #a8b820;
-  border: 1px solid #6d7815;
-}
-
-.dark {
-  background-color: #705848;
-  border: 1px solid #49392f;
-}
-
-.steel {
-  background-color: #b8b8d0;
-  border: 1px solid #787887;
-}
-
-.dragon {
-  background-color: #7038f8;
-  border: 1px solid #4924a1;
-}
-
-.gender-icon {
+.gender-icon,
+.rotate-icon,
+.shiny-icon {
   position: absolute;
-  top: 145px;
   right: 10px;
 }
 
-.rotate-icon {
-  position: absolute;
-  top: 110px;
-  right: 10px;
-}
+.gender-icon { top: 145px; }
+.rotate-icon { top: 110px; }
+.shiny-icon { top: 70px; }
 
 .hidden-button {
   font-size: 0;
@@ -179,55 +176,40 @@ img {
   padding: 0;
 }
 
-.gendered-icon:hover {
-  color: #5f5f5f;
-}
-
-.rotation-icon:hover {
+.gendered-icon:hover,
+.rotation-icon:hover,
+.button-icon:hover,
+.shiny-disabled-icon:hover {
   color: #5f5f5f;
 }
 
 .button-icon {
   cursor: default;
-  font-size:20px;
+  font-size: 20px;
   color: #999;
-}
-
-.button-icon:hover {
-  color: #5f5f5f;
-}
-
-.shiny-icon {
-  position: absolute;
-  top: 70px;
-  right: 10px;
 }
 
 .shiny-disabled-icon {
-  font-size:18px;
+  font-size: 18px;
   color: #999;
 }
 
-.shiny-disabled-icon:hover {
-  color: #5f5f5f;
-}
-
 .shiny-enabled-icon {
-  font-size:18px;
+  font-size: 18px;
   color: #ffcc00;
-}
 
-.shiny-enabled-icon:hover {
-  color: #c9a100;
+  &:hover {
+    color: #c9a100;
+  }
 }
 
 .icon-right {
   font-size: 24px; /* Set icon size */
   color: #999; /* Icon color */
-}
 
-.icon-right:hover {
-  color: #333; /* Darkens on hover */
+  &:hover {
+    color: #333; /* Darkens on hover */
+  }
 }
 
 .iconLeft {
@@ -245,12 +227,12 @@ img {
 }
 
 .variety-dropdown {
-  width: 90%;
+  width: 70%;
   border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 16px;
   outline: none;
   transition: border-color 0.3s ease;
-  left: 10px;
 }
 
 .search-bar:focus {
@@ -269,7 +251,44 @@ img {
   font-weight: bold;
   color: rgb(175, 175, 175);
   position: absolute;
-  top: 10;
+  top: 10px;
   left: 0;
   margin-left: 10px;
+}
+
+.details-area {
+  left: 0;
+  margin-top: 4px;
+
+  .pokemon-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    p {
+      color: #202020;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1em;
+      line-height: 0.7;
+      margin: 0.1em 0;
+      padding-top: 5px;
+      border-bottom: 1px solid #c4c4c4;
+      width: 100%;
+  
+      &.statistic {
+        text-align: left;
+      }
+  
+      &.value {
+        text-align: right;
+      }
+    }
+  }
 }
