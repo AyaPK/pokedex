@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap:100,300,400,700");
+
+body {
+  background-color: #d2dbdd;
+}
+
+* {
+  font-family: "Source Code Pro";
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.card-area {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  margin: 10px;
+}
+
+.Card {
+  position: relative;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  max-width: 220px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 5px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  margin: 2px;
+  height: 200px;
+}
+
+.pokemonImage {
+  height: 100px;
+  object-fit: scale-down;
+  object-position: bottom;
+}
+
+h4 {
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+.type {
+  margin-left: 10px;
+  margin-bottom: 1%;
+  padding: 5px 8px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+  color: #fff;
+  background-color: #68a090;
+  border: 1px solid #44685e;
+
+  &.normal {
+    background-color: #a8a878;
+    border: 1px solid #6d6d4e;
+  }
+
+  &.fire {
+    background-color: #f08030;
+    border: 1px solid #9c531f;
+  }
+
+  &.water {
+    background-color: #6890f0;
+    border: 1px solid #445e9c;
+  }
+
+  &.electric {
+    background-color: #f8d030;
+    border: 1px solid #a1871f;
+  }
+
+  &.grass {
+    background-color: #78c850;
+    border: 1px solid #4e8234;
+  }
+
+  &.ice {
+    background-color: #98d8d8;
+    border: 1px solid #638d8d;
+  }
+
+  &.ground {
+    background-color: #e0c068;
+    border: 1px solid #927d44;
+  }
+
+  &.flying {
+    background-color: #a890f0;
+    border: 1px solid #6d5e9c;
+  }
+
+  &.ghost {
+    background-color: #705898;
+    border: 1px solid #493963;
+  }
+
+  &.rock {
+    background-color: #b8a038;
+    border: 1px solid #786824;
+  }
+
+  &.fighting {
+    background-color: #c03028;
+    border: 1px solid #7d1f1a;
+  }
+
+  &.poison {
+    background-color: #a040a0;
+    border: 1px solid #682a68;
+  }
+
+  &.psychic {
+    background-color: #f85888;
+    border: 1px solid #a13959;
+  }
+
+  &.bug {
+    background-color: #a8b820;
+    border: 1px solid #6d7815;
+  }
+
+  &.dark {
+    background-color: #705848;
+    border: 1px solid #49392f;
+  }
+
+  &.steel {
+    background-color: #b8b8d0;
+    border: 1px solid #787887;
+  }
+
+  &.dragon {
+    background-color: #7038f8;
+    border: 1px solid #4924a1;
+  }
+}
+
+.gender-icon,
+.rotate-icon,
+.shiny-icon {
+  position: absolute;
+  right: 10px;
+}
+
+.gender-icon { top: 145px; }
+.rotate-icon { top: 110px; }
+.shiny-icon { top: 70px; }
+
+.hidden-button {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.gendered-icon:hover,
+.rotation-icon:hover,
+.button-icon:hover,
+.shiny-disabled-icon:hover {
+  color: #5f5f5f;
+}
+
+.button-icon {
+  cursor: default;
+  font-size: 20px;
+  color: #999;
+}
+
+.shiny-disabled-icon {
+  font-size: 18px;
+  color: #999;
+}
+
+.shiny-enabled-icon {
+  font-size: 18px;
+  color: #ffcc00;
+
+  &:hover {
+    color: #c9a100;
+  }
+}
+
+.icon-right {
+  font-size: 24px; /* Set icon size */
+  color: #999; /* Icon color */
+
+  &:hover {
+    color: #333; /* Darkens on hover */
+  }
+}
+
+.iconLeft {
+  margin-right: 50pt;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.variety-dropdown {
+  width: 90%;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  left: 10px;
+}
+
+.variety-dropdown {
+  width: 90%;
+  left: 10px;
+}
+
+.search-bar:focus {
+  border-color: #66afe9;
+}
+
+.search-bar::placeholder {
+  color: #999;
+}
+
+.pokemon-name::first-letter {
+  text-transform: capitalize;
+}
