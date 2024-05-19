@@ -5,8 +5,10 @@ $shine-color-default: rgba(148, 148, 148, 0.452);
 .inner-card {
     width: 100%;
     padding: 10px;
-    position: relative; // Ensure the card is positioned relative to handle absolute positioning of :before
-  
+    position: relative;
+    z-index: 1;
+    border: #000000;
+
     &:before {
       content: '';
       position: absolute;
@@ -16,29 +18,26 @@ $shine-color-default: rgba(148, 148, 148, 0.452);
       height: 200%;
       background: linear-gradient(135deg, transparent 0%, $shine-color-default 25%, transparent 50%, $shine-color-default 75%, transparent 100%);
       transition: transform 1s ease;
-      opacity: 0;
       z-index: -1;
+      opacity: 0.8;
     }
   
     &:hover {
-      background-color: #e7e7e7;
       transform: translateY(0);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   
       .variety-dropdown {
         border-color: #494949;
-        background-color: rgba(165, 165, 165, 0);
+        background-color: #ffffff;
       }
     }
   
     &:hover:before {
       transform: translate(25%, 25%);
-      opacity: 1;
     }
   
     &:not(:hover):before {
       transform: translate(0, 0);
-      opacity: 0;
     }
 
     @import "./type-backgrounds.scss";
