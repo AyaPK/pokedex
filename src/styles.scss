@@ -37,13 +37,20 @@ input {
   overflow: hidden;
   box-shadow: 5px 13px 10px -7px rgba(0, 0, 0, 0.1);
   margin: 2px;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease, border 1s ease;
+  z-index: 1;
+  border: 3px solid #00000046;
 
   @import "css/inner-card.scss";
 
   &:hover {
     transform: translateY(-10px);
     box-shadow:  0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 3px solid #00000094;
+
+    .pokedex-number {
+      color: rgb(17, 17, 17);
+    }
   }
 
   .variety-dropdown {
@@ -52,6 +59,7 @@ input {
     border-radius: 5px;
     font-size: 16px;
     outline: none;
+    background-color: #00000000;
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
 }
@@ -262,6 +270,7 @@ img {
   top: 10px;
   left: 0;
   margin-left: 10px;
+  transition: color 1s ease;
 }
 
 .details-area {
