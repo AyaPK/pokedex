@@ -6,7 +6,7 @@ This project has been built as a React learning excercise, to learn to develop u
 
 # Live site
 
-This project is also hosted live over at (pokedex.ayaspace.co.uk)[https://pokedex.ayaspace.co.uk]
+This project is also hosted live over at [pokedex.ayaspace.co.uk](https://pokedex.ayaspace.co.uk)
 
 ## Features
 
